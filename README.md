@@ -26,9 +26,11 @@ Commands you can paste in terminal:
     .venv\Scripts\activate
 
  install dependencies
+
     pip install -r requirements.txt
 
  initialize the database with sample data
+
     python -c "from app.init_db import main as init; init()"
 
  run the server
@@ -38,7 +40,9 @@ open: http://127.0.0.1:8000/docs (ctrl+click on this in your terminal)
 How to test (example): 
  1. Create student: Select content type as application/json.
     in edit value type: {"college_id":1,"name":"Akshata","email":"xyz@example.com"}
+
     or
+
     in terminal (bash): curl -X POST "http://127.0.0.1:8000/students" -H "Content-Type: application/json" \
                          -d '{"college_id":1,"name":"Akshata","email":"xyz@example.com"}'
 
@@ -60,36 +64,39 @@ How to test (example):
   GET /reports/events?type=Workshop
 
 Project structure:
-  app/ -> FastAPI code (main.py, db.py, init_db.py)
 
-  requirements.txt -> Python dependencies
+  - app/ -> FastAPI code (main.py, db.py, init_db.py)
 
-  design_doc.pdf -> ER Diagram + workflows + assumptions
+  - requirements.txt -> Python dependencies
 
-  Approach_Webknot_Akshata.pdf -> Approach & AI log
+  - design_doc.pdf -> ER Diagram + workflows + assumptions
 
-  reports_screenshots/ -> JSON-screenshots collected from Postman
+  - Approach_Webknot_Akshata.pdf -> Approach & AI log
 
-  ai_log/ -> AI chat screenshots
+  - reports_screenshots/ -> JSON-screenshots collected from Postman
 
-  lovable_ui/ ->  Screenshots of UI designed.
+  - ai_log/ -> AI chat screenshots
+
+  - lovable_ui/ ->  Screenshots of UI designed.
 
 Design:
-  Used SQLite for prototype (easy setup).
 
-  Used integer autoincrement IDs for simplicity.
+  - Used SQLite for prototype (easy setup).
 
-  Kept feedback only for registered students.
+  - Used integer autoincrement IDs for simplicity.
 
-  Reports are SQL-based for transparency and reproducibility.
+  - Kept feedback only for registered students.
+
+  - Reports are SQL-based for transparency and reproducibility.
 
 UI designed: A add-on UI is designed with the help of lovable- https://eventful-campus-ui.lovable.app/ 
 
-Future improvements: 
-  Add authentication & role-based access (admin/student)
+Future improvements:
 
-  Use Postgres and migrations
-  
-  Build a small front-end and integrate with APIs
+  - Add authentication & role-based access (admin/student)
+
+  - Use Postgres and migrations
+
+  - Build a small front-end and integrate with APIs
 
 
