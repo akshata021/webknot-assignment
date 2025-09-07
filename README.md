@@ -10,12 +10,19 @@ Technology used:
 
 Quick setup (copy and run):
 Create the same folder structure and copy the code. 
+
 Commands you can paste in terminal:
- create & activate virtualenv (optional but recommended) :-
+
+ create & activate virtual environment (optional but recommended) :-
+
     python -m venv .venv
+
  mac/linux-
+
     source .venv/bin/activate
+
  windows-
+
     .venv\Scripts\activate
 
  install dependencies
@@ -54,24 +61,35 @@ How to test (example):
 
 Project structure:
   app/ -> FastAPI code (main.py, db.py, init_db.py)
+
   requirements.txt -> Python dependencies
+
   design_doc.pdf -> ER Diagram + workflows + assumptions
+
   Approach_Webknot_Akshata.pdf -> Approach & AI log
+
   reports_screenshots/ -> JSON-screenshots collected from Postman
+
   ai_log/ -> AI chat screenshots
+
   lovable_ui/ ->  Screenshots of UI designed.
 
 Design:
   Used SQLite for prototype (easy setup).
+
   Used integer autoincrement IDs for simplicity.
+
   Kept feedback only for registered students.
+
   Reports are SQL-based for transparency and reproducibility.
 
 UI designed: A add-on UI is designed with the help of lovable- https://eventful-campus-ui.lovable.app/ 
 
 Future improvements: 
   Add authentication & role-based access (admin/student)
+
   Use Postgres and migrations
+  
   Build a small front-end and integrate with APIs
 
 
