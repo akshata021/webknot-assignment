@@ -1,0 +1,17 @@
+{
+    "info": {
+        "name": "Campus Event Reporting Prototype",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+        "name": "Create Student",
+            "request": {
+            "method": "POST",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "url": {"raw": "http://127.0.0.1:8000/students"},
+            "body": {"mode": "raw", "raw": "{\"college_id\":1, \"name\":\"Test Student\", \"email\":\"test@example.com\"}"}
+            }
+        }
+    ]
+    }
