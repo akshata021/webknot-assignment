@@ -89,7 +89,7 @@ Design:
 
   - Reports are SQL-based for transparency and reproducibility.
 
-UI designed: A add-on UI is designed with the help of lovable- https://eventful-campus-ui.lovable.app/ 
+UI designed (not integrated with backend): A add-on UI is designed with the help of lovable- https://eventful-campus-ui.lovable.app/ 
 
 Future improvements:
 
